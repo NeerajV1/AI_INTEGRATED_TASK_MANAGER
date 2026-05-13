@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <form class="auth-card">
+        <h2>Welcome Back 👋</h2>
+
+
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="text" id="PhoneNo" placeholder="Phone Number" required>
+
+    <button type="button" onclick="submitJSON('/login')">Login</button>
+
+    <p class="switch">
+        Don't have an account?
+        <button onclick="directSignUp('/signup2')">signup</button>
+    </p>
+</form>
+
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

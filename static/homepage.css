@@ -1,0 +1,55 @@
+.dashboard {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Controls */
+.task-controls {
+    margin: 20px 0;
+}
+
+/* Add button */
+.add-btn {
+    background: #28a745;
+}
+
+.add-btn:hover {
+    background: #218838;
+}
+
+/* Task list */
+#view-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Task card */
+.tasks {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Priority bar */
+.low { background: lightgreen; height: 5px; border-radius: 5px; }
+.medium { background: orange; height: 5px; border-radius: 5px; }
+.high { background: red; height: 5px; border-radius: 5px; }
+.Low { background: lightgreen; height: 5px; border-radius: 5px; }
+.Medium { background: orange; height: 5px; border-radius: 5px; }
+.High { background: red; height: 5px; border-radius: 5px; }
+/* Status text */
+.tasks div:last-child {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}

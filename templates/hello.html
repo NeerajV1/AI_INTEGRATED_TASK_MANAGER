@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/homepage.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+
+<header class="topbar">
+    <h2>👋 Welcome</h2>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<section class="task-controls">
+    <button class="add-btn" onclick="addtask()">+ Add Task</button>
+    <div id="form-adder"></div>
+</section>
+
+<section id="view-tasks"></section>
+<input type="text"  placeholder="generate tasks by pasting emails" id="input-text">
+<button onclick="createTasksViatext()">submit</button>
+
+
+</div>
+
+<script src="/static/tasks.js"></script>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
